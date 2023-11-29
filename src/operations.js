@@ -51,9 +51,7 @@ export async function login() {
         }
       }  
     `,
-    data => {
-      return data.login.token
-    }
+    data => data.login.token
   )
 }
 
