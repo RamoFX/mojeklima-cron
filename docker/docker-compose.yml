@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  cron:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    container_name: mojeklima-cron
+    restart: always
+    networks:
+      - network1
+    volumes:
+      - ../:/app/
+
+networks:
+  network1:
+    external: true

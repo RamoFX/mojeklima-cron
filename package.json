@@ -1,0 +1,19 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "prestart": "npm install --omit=dev",
+    "start": "node --env-file ./.env ./src/index.js"
+  },
+  "keywords": [
+    "mojeklima",
+    "cron"
+  ],
+  "author": "Roman Dvorovoy <roman.dvorovoy123@gmail.com>",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "node-cron": "^3.0.3"
+  }
+}
